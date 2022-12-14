@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>//TODO: 👇</title>
+        <script
+            src="https://kit.fontawesome.com/c8702b7e57.js"
+            crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="./css/base.css" />
+    </head>
+    <body>
+        <canvas id="canvas" width="32" height="32"></canvas>
+        <main class="app">
+            <h1 class="app__heading">TODO</h1>
+            <form class="app__form">
+                <input
+                    id="newTodo"
+                    type="text"
+                    placeholder="Buy Christmas presents..."
+                    minlength="1"
+                    required />
+                <button id="btnAdd">+</button>
+            </form>
+            <section class="app__list" id="todo">
+                <h2 class="app__list__heading">incomplete</h2>
+                <ul class="app__list__list" id="todoList">
+                    <li class="app__list__list__item">
+                        <button id="btnComplete">
+                            <i class="fa-sharp fa-solid fa-check fa-xs"></i>
+                        </button>
+                        <p>conteeeeeeeeenttttttt</p>
+                    </li>
+                    <li class="app__list__list__item">
+                        <button id="btnComplete">
+                            <i class="fa-sharp fa-solid fa-check fa-xs"></i>
+                        </button>
+                        <p>conteeeeeeeeenttttttt</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="app__list" id="done">
+                <h2 class="app__list__heading">complete</h2>
+                <ul class="app__list__list" id="doneList">
+                    <li class="app__list__list__item">
+                        <button id="btnRemove">
+                            <i class="fa-sharp fa-solid fa-minus fa-xs"></i>
+                        </button>
+                        <p><-- click me THIS IS A THING TO DO</p>
+                    </li>
+                    <li class="app__list__list__item">
+                        <button id="btnRemove">
+                            <i class="fa-sharp fa-solid fa-minus fa-xs"></i>
+                        </button>
+                        <p><-- click me THIS IS A THING TO DO</p>
+                    </li>
+                </ul>
+            </section>
+            <button class="app__start-over" id="startOver">
+                Procrastinate (clear all)
+            </button>
+        </main>
+
+        <script src="./js/index-min.js"></script>
+    </body>
+</html>
